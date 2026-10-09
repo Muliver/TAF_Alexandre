@@ -32,3 +32,16 @@ pip install --upgrade pip
 python3 -m pip install -r requirements_py_venv_taf.txt
 ```
 to install the requirements defined in the file `requirements_py_venv_taf.txt`
+
+## Create an environment variable for this repository
+In your `~/.bashrc` (in Unix) or `~/.bash_profile` (in MacOS) add
+```
+export TAF="<put the path to your local copy of this repo>"
+```
+*Note: to get the local path to your repository, enter `pwd` in your terminal while being
+in your repo.*
+*Note: the `export` keyword assumes that the shell is in BASH, it can vary if it is not (
+e.g. zsh, tcsh, ...).*
+*Careful: do not forget to either open a new terminal or to `source` your `bash*` file to
+make this modification active.*
+From now on, the location of this repo in the computer will be accessed via `${TAF}`.
