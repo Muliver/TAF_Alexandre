@@ -45,3 +45,13 @@ e.g. zsh, tcsh, ...).*
 *Careful: do not forget to either open a new terminal or to `source` your `bash*` file to
 make this modification active.*
 From now on, the location of this repo in the computer will be accessed via `${TAF}`.
+## Python path to ‘Utils‘ modules
+In order to be able to easily import TAF ‘Utils‘ modules in local scripts, a solution is
+to add the following line to your ‘~/.bashrc‘ or ‘~/.bash_profile‘:
+‘‘‘
+export PYTHONPATH="${PYTHONPATH}:${TAF}/Utils"
+‘‘‘
+*Note: doing so, we will not need to specify the path of the module relative to the
+script we are developping.*
+*Careful: do not forget to either open a new terminal or to ‘source‘ your ‘bash*‘ file to
+make this modification active.*
